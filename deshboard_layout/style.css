@@ -1,0 +1,92 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(241, 241, 241);
+}
+
+.container {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 100px 100px 200px 200px 200px;
+  grid-gap: 20px;
+  background-color: rgb(179, 121, 121);
+}
+
+nav {
+  background-color: rgba(157, 12, 253, 0.1);
+  grid-column: 2/-1;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  grid-gap: 25px;
+}
+.desh {
+  text-decoration: none;
+  color: black;
+}
+input {
+  text-align: center;
+  width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.fa-search {
+  margin-left: -90px;
+  width: 70px;
+  padding: 20px;
+  font-size: 20px;
+}
+.fa-envelope {
+  font-size: 35px;
+}
+.fa-bell {
+  font-size: 35px;
+}
+.fa-user-circle {
+  font-size: 35px;
+}
+.menu {
+  display: flex;
+  grid-column: 2/-1;
+  grid-gap: 30px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+.rest {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  padding: 7px;
+  border-radius: 8px;
+  background-color: white;
+  font-weight: bold;
+}
+.rest:hover {
+  background-color: rgba(171, 11, 245, 0.486);
+  color: #fff;
+}
+
+aside {
+  background-color: chocolate;
+  grid-row: 1/6;
+}
+.side {
+  background-color: crimson;
+  grid-row: 3/6;
+}
+
+.box {
+  background-color: cornsilk;
+  grid-column: 3/-1;
+  grid-row: 3/6;
+}
